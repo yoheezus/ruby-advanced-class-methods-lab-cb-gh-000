@@ -44,7 +44,7 @@ class Song
       song_split = file_name.split("-")
       artist_name = song_split[0].strip
       song_name_and_format = song_split[1].strip
-      song_name = song_name_and_format.chomp(song_name_and_format.match(/\.\w*\b/))
+      song_name = song_name_and_format.chomp(song_name_and_format.match(/\.\w*\b/).to_s)
 
       song_from_file_name = self.new
       song_from_file_name.name = song_name
