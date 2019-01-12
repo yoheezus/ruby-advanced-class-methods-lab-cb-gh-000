@@ -52,4 +52,9 @@ class Song
       song_from_file_name
   end
 
+  def self.create_from_filename(file_name)
+      song_file_name = self.new_from_filename(file_name)
+      song_file_name.save
+      song_file_name
+  end
 end
