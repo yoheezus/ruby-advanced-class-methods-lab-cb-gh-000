@@ -50,7 +50,6 @@ class Song
       song_from_file_name.name = song_name
       song_from_file_name.artist_name = artist_name
       song_from_file_name
-
   end
 
 end
